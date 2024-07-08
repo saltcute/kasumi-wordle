@@ -104,3 +104,10 @@ export default class WordleMenu extends BaseMenu {
         });
     }
 }
+
+import { registerFont } from "canvas";
+import upath from "upath";
+
+registerFont(upath.join(__dirname, "..", "font", "comfortaa-bold.ttf"), {
+    family: "Comfortaa",
+});

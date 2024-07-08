@@ -141,7 +141,7 @@ export class WordleSession {
                         );
                         ctx.textBaseline = "middle";
                         ctx.textAlign = "center";
-                        ctx.font = `${this.FONT_SIZE}px Courier Prime`;
+                        ctx.font = `${this.FONT_SIZE}px Comfortaa`;
                         ctx.fillStyle = "white";
                         ctx.fillText(
                             item.character.toUpperCase(),
