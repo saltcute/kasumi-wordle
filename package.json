@@ -1,6 +1,6 @@
 {
     "name": "@saltcute/kasumi-wordle",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Wordle game for Kasumi.js",
     "main": "dist/index.js",
     "scripts": {
