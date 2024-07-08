@@ -6,6 +6,8 @@ import WordleStartCommand from "./commands/start";
 import WordleStopCommand from "./commands/stop";
 
 export default class WordleMenu extends BaseMenu {
+    description = "玩 Wordle 游戏";
+
     constructor(name: string = "wordle") {
         super();
         this.name = name;
