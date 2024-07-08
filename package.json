@@ -1,8 +1,8 @@
 {
-    "name": "kasumi-module-template",
+    "name": "@saltcute/kasumi-wordle",
     "version": "0.1.0",
-    "description": "Template for Kasumi modules",
-    "main": "index.js",
+    "description": "Wordle game for Kasumi.js",
+    "main": "dist/index.js",
     "scripts": {
         "build": "tsc && tsconfig-replace-paths -p tsconfig.json -s ./src -o ./dist",
         "clean": "rimraf dist/*",
@@ -18,7 +18,7 @@
         "kook",
         "bot"
     ],
-    "author": "Hexona",
+    "author": "saltcute",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/HexaNona/kasumi-module-template/issues"

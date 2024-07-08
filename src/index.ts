@@ -3,8 +3,11 @@ import wordle from "./lib";
 import axios from "axios";
 import sharp from "sharp";
 
-export default class AppMenu extends BaseMenu {
-    name = "wordle";
+export default class WordleMenu extends BaseMenu {
+    constructor(name: string = "wordle") {
+        super();
+        this.name = name;
+    }
 
     init(client: Kasumi<any>, loggerSequence: string[]): void {
         super.init(client, loggerSequence);
