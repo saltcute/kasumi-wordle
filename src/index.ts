@@ -2,6 +2,8 @@ import Kasumi, { BaseMenu, BaseSession, Card } from "kasumi.js";
 import wordle from "./lib";
 import axios from "axios";
 import sharp from "sharp";
+import WordleStartCommand from "./commands/start";
+import WordleStopCommand from "./commands/stop";
 
 export default class WordleMenu extends BaseMenu {
     constructor(name: string = "wordle") {
@@ -11,6 +13,9 @@ export default class WordleMenu extends BaseMenu {
 
     init(client: Kasumi<any>, loggerSequence: string[]): void {
         super.init(client, loggerSequence);
+
+        this.load(new WordleStartCommand());
+        this.load(new WordleStopCommand());
 
         this.client.on("message.text", async (event) => {
             const wSession = wordle.getSession(event.channelId);
